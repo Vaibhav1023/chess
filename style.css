@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+   }
+   
+   .main-container{
+    background-color: rgb(39, 39, 39);
+
+   }
+    #container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        
+    }
+    #gameboard{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        flex-wrap :wrap;
+        shape-outside: black;
+        padding-left: 8%;
+        /* border: 2px solid aqua; */
+    }
+    
+    .square{
+        height: 63px;
+        width: 62px;
+        position: relative;
+    }
+    
+    .square svg{
+        height: 35px;
+        width: 35px;
+        margin:15px;
+        position: relative;
+        z-index: -9;
+    }
+    
+    path{
+        position: relative;
+        z-index: -10;
+    }
+    
+    .piece{
+        position: relative;
+        z-index: 9;
+    }
+    .White{
+        background-color: rgb(145, 149, 151);
+    }
+    
+    .Black{
+        background-color: rgb(60, 48, 48);
+    }
+    
+    .black{
+        fill: black;
+    }
+    
+    .white{
+        fill: white;
+    }
+
+    #include{
+        color: red;
+    }
+    span{
+        color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+
+    }
+
+    #player{
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        /* right: 40%; */
+        /* text-decoration-line: underline; */
+    }
+
+    #info-display{
+        top: 60%;
+        color: red;
+        align-items:center;
+        justify-content: center;
+        position: relative;
+    }
